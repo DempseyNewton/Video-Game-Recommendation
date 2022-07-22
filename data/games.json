@@ -15,7 +15,7 @@
     },
     "Red Dead Redemption 2": 
     {
-        "genre": "Open-World Action Adventure Entertainment Shooter Western Fiction",
+        "genre": "Open-World Action Adventure Entertainment Shooter Western",
         "price": 54.99,
         "release date": "October 26, 2018",
         "description": "After a robbery goes badly wrong in the Western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive."
@@ -57,7 +57,7 @@
     },
     "ARK: Survival Evolved": 
     {
-        "genre": "Survival MM0 Shooter Action Adventure",
+        "genre": "Survival MMO Shooter Action Adventure",
         "price": 29.99,
         "release date": "August 27, 2017",
         "description": "In the game, players must survive being stranded on one of several maps filled with roaming dinosaurs, fictional fantasy monsters and other prehistoric animals, natural hazards, and potentially hostile human players."
