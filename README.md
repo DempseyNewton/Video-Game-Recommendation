@@ -1,2 +1,2 @@
 # Video-Game-Recommendation
-A simple cli video game recommendation app.
+A simple CLI video game recommendation app.
