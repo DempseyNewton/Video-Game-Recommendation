@@ -1,0 +1,79 @@
+{
+    "Skyrim Special Edition": 
+    {
+        "genre": "Entertainment Open-World Fantasy Action Adventure RP",
+        "price": 19.99,
+        "release date": "October 28, 2016",
+        "description": "The Elder Scrolls V: Skyrim is an Action role-playing game, playable from either a first or third-person perspective. The player may freely roam over the land of Skyrim, an open world environment consisting of wilderness expanses, dungeons, caves, cities, towns, fortresses, and villages."
+    },
+    "Grand Theft Auto V":
+    {
+        "genre": "Open-World Action Adventure Shooter",
+        "price": 12.99,
+        "release date": "September 17, 2013",
+        "description": "Grand Theft Auto V is an Action-Adventure game played from either a third-person or first-person perspective. Players complete missions—linear scenarios with set objectives—to progress through the story. Outside of the missions, players may freely roam the open world."
+    },
+    "Red Sead Redemption 2": 
+    {
+        "genre": "Open-World Action Adventure Entertainment Shooter Western Fiction",
+        "price": 54.99,
+        "release date": "October 26, 2018",
+        "description": "After a robbery goes badly wrong in the Western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive."
+    },
+    "Fall Guys: Ultimate Knockout": 
+    {
+        "genre": "Battle-Royale",
+        "price": 0.00,
+        "release date": "August 4, 2020",
+        "description": "The game involves up to 60 players who control jellybean-like creatures and compete against each other in a series of randomly selected mini-games, such as obstacle courses or tag."
+    },
+    "Fortnite":
+    {
+        "genre": "Battle-Royale Shooter",
+        "price": 0.00,
+        "release date": "July 21, 2017",
+        "description": "Fortnite is a survival game where 100 players fight against each other in player versus player combat to be the last one standing. It is a fast-paced, Action-packed game, not unlike The Hunger Games, where strategic thinking is a must in order to survive."
+    },
+    "World of Warcraft": 
+    {
+        "genre": "MMO RP Entertainment Fantasy Action",
+        "price": 39.99,
+        "release date": "November 23, 2004",
+        "description": "As a massively multiplayer online game, World of Warcraft enables thousands of players from across the globe to come together online undertaking grand quests and heroic exploits in a land of fantastic Adventure." 
+    },
+    "Elden Ring": 
+    {
+        "genre": "Adventure Open-World Action RP",
+        "price": 59.99,
+        "release date": "February 25, 2022",
+        "description": "Elden Ring is an Action role-playing game played in a third person perspective, with gameplay focusing on combat and exploration; it features elements similar to those found in other games developed by FromSoftware, such as the Souls series, Bloodborne, and Sekiro: Shadows Die Twice."
+    },
+    "Among Us":
+    {
+        "genre": "Survival",
+        "price": 3.99,
+        "release date": "June 15, 2018",
+        "description": "Among Us is a 2018 online multiplayer social deduction game developed and published by American game studio Innersloth. The game was inspired by the party game Mafia and the science Fiction horror film The Thing."
+    },
+    "ARK: Survival Evolved": 
+    {
+        "genre": "Survival MM0 Shooter Action Adventure",
+        "price": 29.99,
+        "release date": "August 27, 2017",
+        "description": "In the game, players must survive being stranded on one of several maps filled with roaming dinosaurs, fictional fantasy monsters and other prehistoric animals, natural hazards, and potentially hostile human players."
+    },
+    "Minecraft": 
+    {
+        "genre": "Survival Action Adventure Open-World Sandbox",
+        "price": 29.99,
+        "release date": "November 18, 2011",
+        "description": "Minecraft is a 3-D computer game where players can build anything. The game which has been described as like an 'online Lego' involves building blocks and creating structures across different environments and terrains. Set in a virtual world the game involves resource gathering, crafting items, building, and combat."
+    },
+    "Garry's Mod":
+    {
+        "genre": "Sandbox Shooter RP",
+        "price": 9.99,
+        "release date": "November 29, 2006",
+        "description": "Garry's Mod is a physics-based sandbox game that, in its base game mode, has no set objectives. The player is able to spawn non-player characters, ragdolls, and props, and interact with them by various means. Using the physics gun, ragdolls and props can be picked up, rotated, and frozen in place."
+    }
+}
