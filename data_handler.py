@@ -61,6 +61,11 @@ def display_games_by_genre(genre):
 def games_in_genre(genre):
     return genre_sorted_games[genre]
 
+def display_all_games():
+    print("All games:")
+    for game in games:
+        print(f" •{game}")
+
 """
 genre_sorted_games = sort_by_genre()
 price_heap = ascending_price_genre("Action", genre_sorted_games)
