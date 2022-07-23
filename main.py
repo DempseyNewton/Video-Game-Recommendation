@@ -31,7 +31,7 @@ if sort_by_genre:
     # Get what genre the user wants to sort by.
     genre = 'None'    
     while not genre in data_handler.genres["genres"].split(' '):
-        genre = input("Do you wish to sort by genre? Enter genre: ")
+        genre = input("Enter genre: ")
     
 choice = ''
 while choice != 'y' and choice != 'n':
@@ -61,10 +61,27 @@ if sort_by_price:
             print("Enter a valid number. (Make sure there are no symbols)")
     
 # FILTERING THE GAMES AND DISPLAYING THEM.
+genre_sorted_games = data_handler.sort_by_genre()
 if sort_by_genre and sort_by_price:
-    genre_sorted_games = data_handler.sort_by_genre()
     price_heap = data_handler.ascending_price_genre(genre, genre_sorted_games)
     price_heap.sort()
     price_range = data_handler.find_prices_range(price_heap.sorted, (min, max))
     print(f"{genre} Games (${min} - ${max}):")
-    data_handler.display_ascending_price(price_heap.sorted[price_range[0]:price_range[1] + 1])  
+    data_handler.display_ascending_price(price_heap.sorted[price_range[0]:price_range[1] + 1])
+elif sort_by_genre and not sort_by_price:
+    print(f"{genre} Games:")
+    for game in genre_sorted_games[genre]:
+        print(f" • {game}")
+elif sort_by_price and not sort_by_genre:
+    # Show all games in ascending price order.
+    price_heap = data_handler.ascending_price()
+    price_heap.sort()
+    price_range = data_handler.find_prices_range(price_heap.sorted, (min, max))
+    print(f"Games (${min} - ${max}):")
+    data_handler.display_ascending_price(price_heap.sorted[price_range[0]:price_range[1] + 1])
+else:
+    choice = ''
+    while choice.lower() != 'y' and choice.lower() != 'n':
+        choice = input("Okay, do you wish to see all games? y/n: ")
+    if choice.lower() == 'y':
+        data_handler.display_all_games()
