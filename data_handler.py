@@ -32,7 +32,7 @@ def ascending_price_genre(genre):
 
 def display_ascending_price(heap_list):
     for game in heap_list:
-        print(f"  • {game[0]} is ${game[1]}")
+        print(f" • {game[0]} is ${game[1]}")
 
 def find_prices_range(game_list, range=(0.00, 12.99)):
     middle_idx = len(game_list) // 2 
@@ -50,7 +50,7 @@ def find_prices_range(game_list, range=(0.00, 12.99)):
 def display_games_by_genre(genre):
     print(f"{genre}:")
     for game in genre_sorted_games[genre]:
-        print(f"   • {game}")
+        print(f" • {game}")
             
 def games_in_genre(genre):
     return genre_sorted_games[genre]
@@ -61,10 +61,12 @@ price_heap.sort()
 price_range_1 = find_prices_range(price_heap.sorted, (0.00, 100.00))
 price_range_2 = find_prices_range(price_heap.sorted, (30.00, 60.00))
 
+"""
 print("Action Games (Ascending Price):")
 display_ascending_price(price_heap.sorted[price_range_1[0]:price_range_1[1] + 1])  
 
 print("Action Games ($30.00 - $60.00):")
 display_ascending_price(price_heap.sorted[price_range_2[0]:price_range_2[1] + 1])  
+"""   
         
 games_file.close()
