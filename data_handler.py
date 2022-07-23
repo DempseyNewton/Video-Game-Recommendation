@@ -24,7 +24,7 @@ def sort_by_genre():
                 games_and_genres[g].append(game)          
     return games_and_genres
 
-def ascending_price_genre(genre):
+def ascending_price_genre(genre, genre_sorted_games):
     heap = MinHeap(len(genre_sorted_games[genre]))
     for game in genre_sorted_games[genre]:
         heap.insert([game, games[game]["price"]])
@@ -55,13 +55,14 @@ def display_games_by_genre(genre):
 def games_in_genre(genre):
     return genre_sorted_games[genre]
 
+"""
 genre_sorted_games = sort_by_genre()
 price_heap = ascending_price_genre("Action")
 price_heap.sort()
 price_range_1 = find_prices_range(price_heap.sorted, (0.00, 100.00))
 price_range_2 = find_prices_range(price_heap.sorted, (30.00, 60.00))
 
-"""
+
 print("Action Games (Ascending Price):")
 display_ascending_price(price_heap.sorted[price_range_1[0]:price_range_1[1] + 1])  
 
