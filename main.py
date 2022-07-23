@@ -37,10 +37,11 @@ choice = ''
 while choice != 'y' and choice != 'n':
     choice = input("Do you wish to sort by price? y/n: ")
 
-sort_by_price = choice.lower() == 'y'
 # If the user wants to sort by price, find out the min price and the max price.
+sort_by_price = choice.lower() == 'y'
+min = ''
+max = ''
 if sort_by_price:
-    min = ''
     while type(min) != float:
         try:
             min = float(input("Enter min price: "))
@@ -50,7 +51,6 @@ if sort_by_price:
         except ValueError:
             print("Enter a valid number. (Make sure there are no symbols)")
     
-    max = ''
     while type(max) != float:
         try:
             max = float(input("Enter max price: "))
@@ -60,5 +60,11 @@ if sort_by_price:
         except ValueError:
             print("Enter a valid number. (Make sure there are no symbols)")
     
-
-        
+# FILTERING THE GAMES AND DISPLAYING THEM.
+if sort_by_genre and sort_by_price:
+    genre_sorted_games = data_handler.sort_by_genre()
+    price_heap = data_handler.ascending_price_genre(genre, genre_sorted_games)
+    price_heap.sort()
+    price_range = data_handler.find_prices_range(price_heap.sorted, (min, max))
+    print(f"{genre} Games (${min} - ${max}):")
+    data_handler.display_ascending_price(price_heap.sorted[price_range[0]:price_range[1] + 1])  
