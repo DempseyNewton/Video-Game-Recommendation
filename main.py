@@ -85,3 +85,16 @@ else:
         choice = input("Okay, do you wish to see all games? y/n: ")
     if choice.lower() == 'y':
         data_handler.display_all_games()
+
+choice = ''
+while choice != 'y' and choice != 'n':
+    choice = input("Do you wish to see information about a game? y/n: ")
+
+if choice == 'y':
+    game = ''
+    while not game in data_handler.games:
+        game = input("Enter games title: ")
+    print(f"\nGenres: {data_handler.games[game]['genre']}")
+    print(f"Price: {data_handler.games[game]['price']}")
+    print(f"Release Date: {data_handler.games[game]['release date']}\n")
+    print(f"Description: {data_handler.games[game]['description']}")
